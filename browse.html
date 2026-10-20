@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Haven – Browse</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/browse.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/browse" class="selected">Browse Pets</a>
+        <a href="/applications">View Applications</a>
+        <a href="/about">About Us</a>
+    </nav>
+    
+    <!-- Banner -->
+    <div class="banner">
+        <h1>Pet Haven</h1>
+        <p>Give love to every pet</p>
+    </div>
+    <div class="container">
+        <section>
+            <h2>Select a Shelter</h2>
+            <select id="shelterSelect"><option value="">-- Select a shelter --</option></select>
+        </section>
+
+        <section id="petTypeSection" hidden>
+            <h2>Pet Type</h2>
+            <div class="pet-type-buttons">
+                <button class="active" data-type="All" type="button">All</button>
+                <button data-type="Cats" type="button">Cats</button>
+                <button data-type="Dogs" type="button">Dogs</button>
+                <button data-type="Birds" type="button">Birds</button>
+                <button data-type="Reptiles" type="button">Reptiles</button>
+                <button data-type="Other" type="button">Other</button>
+            </div>
+        </section>
+
+        <section>
+            <div class="pet-grid" id="petGrid"></div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Pet Haven | Give love to every pet
+    </footer>
+
+    <script src="scripts/browse.js"></script>
+</body>
+</html>

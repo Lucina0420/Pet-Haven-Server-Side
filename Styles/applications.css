@@ -1,0 +1,24 @@
+.container > h2 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 1rem;
+}
+#applicationsMessage { margin-bottom: 1rem; color: #444; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: #fff; }
+th, td { border: 1px solid #ccc; padding: 0.8rem; text-align: left; }
+th { background: #444; color: #fff; }
+tbody tr:nth-child(even) { background: #f3f3f3; }
+.status-select { padding: 0.55rem; border: 1px solid #777; font-size: 1rem; font-weight: 700; }
+.status-Unprocessed { background: #eee; color: #333; }
+.status-Pending { background: #fff1b8; color: #624900; }
+.status-Rejected { background: #f7d1d1; color: #7a2020; }
+.status-Approved { background: #d4eed8; color: #185b27; }
+.view-button { background: #444; color: #fff; border: 0; padding: 0.55rem 0.8rem; cursor: pointer; margin-left: 0.4rem; }
+.view-button:hover, .view-button[aria-pressed="true"] { background: #288b47; }
+.application-details { margin-top: 2rem; padding: 1.5rem; background: #eee; border-radius: 6px; }
+.application-details h3 { color: #333; margin: 1.3rem 0 0.6rem; }
+.application-details h3:first-child { margin-top: 0; }
+.application-details p { line-height: 1.6; margin: 0.25rem 0; }
+.application-details img { display: block; width: 180px; height: 180px; object-fit: cover; border-radius: 8px; margin-top: 0.7rem; }
+.details-error { color: #8b1d1d; }

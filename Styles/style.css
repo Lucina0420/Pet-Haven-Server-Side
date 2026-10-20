@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #444;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    transition: background-color 0.2s;
+    padding: 0.4rem 0.6rem;
+    display: inline-block;
+}
+
+nav a:not(.selected):hover {
+    background-color: #666;
+}
+
+nav a.selected {
+    background-color: #288b47;
+    cursor: default;}
+
+nav a.selected:hover {
+    background-color: #288b47;
+}
+
+/* Banner */
+.banner {
+    background-color: #777;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.banner h1 {
+    font-size: 48px;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-top:10px;
+    color:white;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Footer */
+footer{
+    background-color:#444;
+    color:white;
+    text-align:center;
+    padding:1.5rem;
+    font-size:16px;
+}

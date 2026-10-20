@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Haven - Applications</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/applications.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/browse">Browse Pets</a>
+        <a href="/applications" class="selected">View Applications</a>
+        <a href="/about">About Us</a>
+    </nav>
+    <div class="banner">
+        <h1>Pet Haven</h1>
+        <p>Give love to every pet</p>
+    </div>
+    <main class="container">
+        <h2>Adoption Applications</h2>
+        <p id="applicationsMessage" role="status" aria-live="polite"></p>
+        <div class="table-wrap">
+            <table id="applicationsTable">
+                <thead><tr><th>Date</th><th>Application ID</th><th>Shelter ID</th><th>Pet ID</th><th>Pet Type</th><th>Status</th></tr></thead>
+                <tbody id="applicationsBody"></tbody>
+            </table>
+        </div>
+        <section id="applicationDetails" class="application-details" hidden aria-live="polite"></section>
+    </main>
+    <footer>© 2026 Pet Haven | Give love to every pet</footer>
+    <script src="scripts/applications.js"></script>
+</body>
+</html>

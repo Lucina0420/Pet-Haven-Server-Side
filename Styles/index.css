@@ -1,0 +1,79 @@
+.welcome-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.welcome-text h2 {
+    font-size: 36px;
+    margin-bottom: 1rem;
+    color:#333;
+}
+.welcome-text p {
+    font-size:18px;
+    line-height:1.6;
+    color:#444;
+}
+.welcome-img{
+    width:100%;
+    max-height:400px;
+    height:auto;
+    object-fit: contain;
+    border-radius:0;
+}
+/* How Adoption Works */
+.adoption-steps-section{
+    margin-bottom:3rem;
+}
+.adoption-steps-section h2{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:1.5rem;
+    color:#333;
+}
+.steps-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:15px;
+}
+.step-card{
+    background:#888;
+    color:white;
+    text-align:center;
+    padding:2rem 1rem;
+    font-size:24px;
+}
+/* Why Adopt Section */
+.why-adopt{
+    margin-bottom:4rem;
+    background:#eee;
+    padding:2rem;
+}
+.why-adopt h2{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:1.2rem;
+    color:#333;
+}
+.why-adopt ul{
+    max-width:600px;
+    margin:0 auto;
+    font-size:20px;
+    line-height:1.8;
+    color:#444;
+}
+.start-here-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.2rem;
+    background-color: #288b47;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.start-here-button:hover {
+    background-color: #206f39;
+}

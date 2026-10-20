@@ -1,0 +1,99 @@
+form{
+    background:#eee;
+    padding:2rem;
+}
+
+.pet-summary{
+    background:#ddd;
+    padding:1.2rem;
+    margin-bottom:2rem;
+    font-size:18px;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size:26px;
+    margin-bottom:1rem;
+    color:#333;
+}
+
+label {
+    display:block;
+    margin:0.8rem 0 0.3rem;
+    font-size:18px;
+}
+
+input, select, textarea {
+    width:100%;
+    padding:0.6rem;
+    font-size:18px;
+    border:1px solid #999;
+}
+
+textarea{
+    min-height:120px;
+}
+
+.checkbox-row{
+    margin:1rem 0;
+    font-size:18px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-row input[type="checkbox"]{
+    width:auto;
+    margin:0;
+}
+
+/* submit按钮样式 */
+#submitApp{
+    padding:0.9rem 1.5rem;
+    font-size:18px;
+    background:#888;   /* 初始禁用：灰色 */
+    color:white;
+    border:none;
+    margin-top:1rem;
+    cursor:not-allowed;
+}
+/* 只有启用状态，才用原来深色，才会有hover */
+#submitApp:enabled{
+    background:#444;
+    cursor:pointer;
+}
+#submitApp:enabled:hover{
+    background:#333;
+}
+/* 禁用状态 完全没有hover效果 */
+#submitApp:disabled:hover{
+    background:#888;
+}
+
+.submission-success{
+    background:#eee;
+    padding:2rem;
+    text-align:center;
+}
+.submission-success h2{
+    color:#333;
+    margin-bottom:1rem;
+}
+.submission-success p{
+    font-size:18px;
+    margin-bottom:1.5rem;
+}
+.submission-success button{
+    padding:0.9rem 1.5rem;
+    font-size:18px;
+    background:#444;
+    color:white;
+    border:0;
+    cursor:pointer;
+}
+.submission-success button:hover{
+    background:#333;
+}

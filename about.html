@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Haven – About</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/about.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/browse">Browse Pets</a>
+        <a href="/applications">View Applications</a>
+        <a href="/about" class="selected">About Us</a>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner">
+        <h1>Pet Haven</h1>
+        <p>Give love to every pet</p>
+    </div>
+    <div class="container">
+        <div class="welcome-row">
+            <div class="welcome-text">
+                <h2>Our Mission</h2>
+                <p id="missionText"></p>
+            </div>
+            <img class="welcome-img" src="images/cat6.jpg" alt="image">
+        </div>
+        
+        <!-- Our Team -->
+        <section>
+            <h2>Our Team</h2>
+            <p id="teamDescription"></p>
+            <div class="team-container" id="teamContainer"></div>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        © 2026 Pet Haven | Give love to every pet
+    </footer>
+<script src="scripts/aboutData.js"></script>
+<script src="scripts/about.js"></script>
+</body>
+</html>

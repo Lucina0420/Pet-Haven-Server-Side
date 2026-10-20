@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Haven - Application</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/apply.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/browse" class="selected">Browse Pets</a>
+        <a href="/applications">View Applications</a>
+        <a href="/about">About Us</a>
+    </nav>
+    <!-- Banner -->
+    <div class="banner">
+        <h1>Pet Haven</h1>
+        <p>Give love to every pet</p>
+    </div>
+    <div class="container">
+        <div id="applicationMessage" aria-live="polite"></div>
+        <form id="adoptForm">
+            <div class="pet-summary" id="petSummary"></div>
+
+            <section>
+                <h3>Your Information</h3>
+                <label for="fullName">Full Name</label><input id="fullName" type="text" placeholder="Jane Smith" required>
+                <label for="email">Email Address</label><input id="email" type="email" placeholder="jane@example.com" required>
+                <label for="phone">Phone Number</label><input type="tel" id="phone" pattern="1? ?\([0-9]{3}\) ?[0-9]{3}-[0-9]{4}" placeholder="1 (xxx) xxx-xxxx" required><br><br>
+                <label for="address">Home Address</label><input id="address" type="text" placeholder="123 Main St, City" required>
+                <label for="residents">Number of residents in the home</label><input id="residents" type="number" min="1" placeholder="2" required>
+            </section>
+
+            <section>
+                <h3>Current Pets in Your Home</h3>
+                <textarea id="currentPets" placeholder="List other pets that you have (species, age, health). Example: 1 dog, 4 years old, healthy." required></textarea>
+            </section>
+
+            <section>
+                <h3>Pet Experience</h3>
+                <label for="experience">Experience with this type of pet</label>
+                <select id="experience" required>
+                    <option value="">--Select--</option>
+                    <option>None</option>
+                    <option>Some</option>
+                    <option>Extensive</option>
+                </select>
+                <label for="livingPlace">Where will this pet primarily live?</label>
+                <select id="livingPlace" required>
+                    <option value="">--Select--</option>
+                    <option>Indoor</option>
+                    <option>Outdoor</option>
+                    <option>Both</option>
+                </select>
+            </section>
+
+            <section>
+                <h3>Support Us (Optional Donation)</h3>
+                <!-- Donation is optional, NO required -->
+                <select id="donation">
+                    <option>$0</option>
+                    <option>$10</option>
+                    <option>$25</option>
+                    <option>$50</option>
+                </select>
+            </section>
+
+            <div class="checkbox-row">
+                <input type="checkbox" id="care" required>
+                <label for="care">I agree to provide proper care, food, shelter and medical attention for the pet.</label>
+            </div>
+            <div class="checkbox-row">
+                <input type="checkbox" id="guarantee" required>
+                <label for="guarantee">I understand that the application does not guarantee adoption.</label>
+            </div>
+
+            <button id="submitApp" type="submit" disabled>Submit Application</button>
+        </form>
+    </div>
+    <!-- Footer -->
+    <footer>
+        © 2026 Pet Haven | Give love to every pet
+    </footer>
+    <script src="scripts/apply.js"></script>
+</body>
+</html>
